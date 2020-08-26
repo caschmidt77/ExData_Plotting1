@@ -30,6 +30,7 @@ data[, Time := as.ITime(Time)] #convert "Time" here rather than before subsettin
 #create Plot 1: histogram of Global Active Power on subject days as specified
 
 #following line of code correctly creates plot and outputs to screen graphics device
+par(mfrow = c(1,1))
 hist(data$Global_active_power, main = "Global Active Power", col = "red",
      xlab = "Global Active Power (kilowatts)")
 
